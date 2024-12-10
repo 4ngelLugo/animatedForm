@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated LogIn</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="bgBox">
+
+        <div class="bgBox-singin">
+          <h2>You don't have an account?</h2>
+          <p>Sign in to start</p>
+          <button id="changeToSignin" class="bgBox-btn">Sign In</button>
+        </div>
+
+        <div class="bgBox-login">
+          <h2>Already have an account?</h2>
+          <p>Log in to enter</p>
+          <button id="changeToLogin" class="bgBox-btn">Log In</button>
+        </div>
+
+      </div>
+
+      <div class="animatedContainer">
+        <form
+          action="./assets/php/registro_usuarios.php"
+          method="POST"
+          class="animatedContainer-form">
+          
+          <h2>Sign In</h2>
+
+          <div class="animatedContainer-input">
+            <label for="idSignin">Identification</label>
+            <input
+              type="text"
+              id="idSignin"
+              placeholder="Identification"
+              name="idSignin" />
+          </div>
+
+          <div class="animatedContainer-input">
+            <label for="nameSignin">Names</label>
+            <input
+              type="text"
+              id="nameSignin"
+              placeholder="Names"
+              name="nnameSignin" />
+          </div>
+
+          <div class="animatedContainer-input">
+            <label for="phoneSignin">Phone number</label>
+            <input
+              type="tel"
+              id="phoneSignin"
+              placeholder="Phone number"
+              name="phoneSignin" />
+          </div>
+
+          <div class="animatedContainer-input">
+            <label for="passwordSignin">Create password</label>
+            <input
+              type="password"
+              id="passwordSignin"
+              placeholder="Create password"
+              name="passwordSignin" />
+          </div>
+
+          <button type="submit" class="animatedContainer-submitBtn">
+            Registrarse
+          </button>
+        </form>
+
+        <form
+          action="./assets/php/inicio_secion_usuarios.php"
+          method="POST"
+          class="animatedContainer-form">
+          <h2>Log In</h2>
+
+          <div class="animatedContainer-input">
+            <label for="idLogin">Identification</label>
+            <input
+              type="text"
+              id="idLogin"
+              placeholder="Identification"
+              name="idLogin" />
+          </div>
+
+          <div class="animatedContainer-input">
+            <label for="passwordLogin">Password</label>
+            <input
+              type="passwordLogin"
+              id="passwordLogin"
+              placeholder="Create password"
+              name="passwordLogin" />
+          </div>
+
+          <button type="submit" class="animatedContainer-submitBtn">
+            Iniciar sesión
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
