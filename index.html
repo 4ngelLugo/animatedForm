@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
 
     <title>Animated LogIn</title>
   </head>
   <body>
     <main class="container">
       <div class="bgBox">
-        <div class="bgBox-content">
+        <div class="bgBox-content-signIn">
           <div class="box-content-text">
             <p class="bgBox-title">You don't have an account?</p>
             <p class="bgBox-paragraph">Sign in to start</p>
@@ -20,7 +21,7 @@
           <button id="changeToSignin" class="bgBox-btn">Sign In</button>
         </div>
 
-        <div class="bgBox-content">
+        <div class="bgBox-content-logIn">
           <div class="box-content-text">
             <p class="bgBox-title">Already have an account?</p>
             <p class="bgBox-paragraph">Log in to enter</p>
@@ -29,10 +30,11 @@
         </div>
       </div>
 
-      <div class="animatedContainer">
+      <div id="animatedContainer" class="animatedContainer">
         <form
-          action="./assets/php/registro_usuarios.php"
+          action=""
           method="POST"
+          id="SignIn"
           class="animatedContainer-form SignIn">
           <p class="animatedContainer-form-title">Sign In</p>
 
@@ -72,8 +74,9 @@
         </form>
 
         <form
-          action="./assets/php/inicio_secion_usuarios.php"
+          action=""
           method="POST"
+          id="LogIn"
           class="animatedContainer-form LogIn">
           <p class="animatedContainer-form-title">Log In</p>
 
